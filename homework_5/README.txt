@@ -5,3 +5,4 @@ This page provides some background on the company and who they are.
 CLARIFICATIONS:
 - The home page file is called MuddyPaws.html 
 - The product detail page that I implemented is the Cat Backpack. The only product images that are clickable are the cat backpack.
+- Please view at 1366 x 768 screen ratio, these were the dimensioned I designed for.
