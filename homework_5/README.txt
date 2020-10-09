@@ -1,3 +1,5 @@
+LINK TO HOMEPAGE: https://sarahj930.github.io/sarah_hand_pui/homework_5/MuddyPaws.html
+
 EXTRA WORK:
 I created an additonal page beyond the home, product browsing, and product details pages called "About Us".
 This page provides some background on the company and who they are. 
