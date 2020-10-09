@@ -1,0 +1,221 @@
+/* For my grids I decided to use a nested grid system.
+Grid-container is the outermost grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0px;
+}
+
+/* Container for the navigation bar, has 7 comlumns for content */
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+/* Container for testimonial section, has 2 columns */
+.testimonial {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px;
+  align-items: center;
+}
+
+/* Generic grid item basline */
+.grid-item {
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+
+/* Specific to the testimonial text */
+.grid-item-testimonial {
+  border: none;
+  padding: 20px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: black;
+}
+
+/* Specific to grid items in home3 section */
+.grid-item-home3 {
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+  height: 300px;
+}
+
+/* Specific to navigation section */
+.grid-item-nav {
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-left: -75px;
+  margin-top: -30px;
+  color: white;
+  width: 75px;
+}
+
+/* Setting the hero image */
+.hero-image {
+  background-image: url("about_hero.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0px;
+  height: 800px;
+}
+
+/* Setting the background for home2 */
+.home2 {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0px;
+  height: 800px;
+}
+
+/* Setting the background for home3 */
+.home3 {
+  background-image: url("about-2.png");
+  background-color: #0F1C21;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -200px;
+  height: 875px;
+  align-content: center;
+  padding-top: 200px;
+}
+
+/* Profile icon in navigation */
+#profile {
+  margin-right: -200px;
+  margin-top: -30px;
+}
+
+/* Searchbar in navigation */
+#searchbox {
+  margin-right: -500px;
+  margin-top: -40px;
+  width: 200px;
+  height: 20px;
+}
+
+/* Text that says "We make customizable gear..." */
+#tagline {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 100px;
+  color: black;
+}
+
+/* Shopping bag icon in navigation */
+#bag {
+  margin-top: -30px;
+}
+
+/* Slogan Text */
+.grid-item-getMuddy {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat';
+  margin: 0px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  padding-top: 0px;
+}
+
+/* Footer */
+.footer {
+  margin-left: -1000px;
+  margin-bottom: -110px;
+}
+
+/* MUDDY PAWS logo in navigation and footer */
+.logo {
+  margin-top: -15px;
+}
+
+/* Setting background for whole document */
+.document {
+  background: #E5E5E5;
+}
+
+/* Removing margins so content spreads to corners */
+body {
+  margin: 0px;
+}
+
+/* General text styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+
+/* Hero text "Muddy Paws Adventure Gear" */
+.hero_txt1 {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 60px;
+  margin-top:-20px;
+  margin-bottom: 0px;
+  font-size:48px;
+}
+
+/* Hero text "Customizable adventuring gear for your pet!" */
+.hero_txt {
+  font-weight: light;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+/* Logo in footer */
+#footerlogo {
+  margin-top: 220px;
+  margin-left:-120px;
+}
+
+/* Adjusting the style of all links to remove undlerline */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}

@@ -1,0 +1,263 @@
+/* Container for the navigation bar, has 7 comlumns for content */
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Removing margins so content spreads to corners */
+body {
+  margin: 0px;
+}
+
+/* For my grids I decided to use a nested grid system.
+.content is the outermost grid*/
+.content {
+  display: grid;
+  grid-template-columns: 159px 545px auto;
+  grid-template-rows: auto auto auto auto auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Grid for pictures along the side of main product image*/
+.grid-item-sidepics {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  height: 625px;
+  width: 149px;
+  margin-right: 10px;
+  margin-top: 75px;
+}
+
+/* All of these are adding the side pictures */
+#pic1 {
+  background-image: url(pic1.png);
+  margin-left: 40px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+
+#pic2 {
+  background-image: url(pic2.png);
+  margin-left: 40px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+
+#pic3 {
+  background-image: url(pic3.png);
+  margin-left: 40px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+
+#pic4 {
+  background-image: url(pic4.png);
+  margin-left: 40px;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
+}
+
+/* Setting the main product image */
+.main-pic {
+  background-image: url(catbackpack1.png);
+  height: 625px;
+  width: 535px;
+  margin-right: 10px;
+  margin-top: 75px;
+}
+
+/* Grid for product information, 7 rows and 2 columns */
+.info {
+  display: grid;
+  grid-auto-rows: auto auto auto auto auto auto auto;
+  grid-auto-columns: auto auto;
+  height: 624px;
+  width: 400px;
+}
+
+/* Footer */
+.footer {
+  height: 102px;
+}
+
+/* Generic grid item basline */
+.grid-item {
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  color: black;
+}
+
+/* Product Title */
+#title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 48px;
+  text-align: left;
+  height: 50px;
+  margin-top: 75px;
+}
+
+/* "More items you might like..." */
+#title2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: left;
+  height: 50px;
+  margin-top: 75px;
+  margin-left: -120px;
+}
+
+/* Adding reviews image */
+#stars {
+  background-image: url(reviews.png);
+  background-repeat: no-repeat;
+  margin-top: -50px
+}
+
+/* Color option grid with 6 columns */
+#colors {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-top: -20px;
+  height: auto;
+}
+
+/* Size option grid with 6 columns */
+#sizes {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-top: -20px;
+  height: auto;
+  margin-left: 10px;
+}
+
+/* Specfic to color options */
+.grid-item-colors {
+  margin: -10px;
+  margin-left: -30px;
+}
+
+/* Specific to size options */
+.grid-item-sizes {
+  margin: -10px;
+  margin-left: -25px;
+}
+
+/* Grid for further information, 2 columns for text and the + */
+.grid-item-further {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+}
+
+/* Specific to the "dropdown" options in the further info section */
+.grid-item-dropdown {
+  /* margin-top: -75px; */
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-left: 0px;
+}
+
+/* Plus sign in dropdown */
+.grid-item-dropdown-plus {
+  /* margin-top: -75px; */
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-left: 0px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Bag icon in navigation */
+.grid-item-bag {
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  color: black;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+/* Grid for more items pictures with 4 columns */
+.more-items {
+  display: grid;
+  grid-template-columns: 171px 171px 171px 171px;
+  height: 240px;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+/* These are all the images in the more items section */
+#morepic1 {
+  background-image: url(waterstorage2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+#morepic2 {
+  background-image: url(foodattachment2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+#morepic3 {
+  background-image: url(gps2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+#morepic4 {
+  background-image: url(dogharness2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  margin-top: 75px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+/* Specific to logo in footer */
+#footerlogo {
+  margin-top: 20px;
+}
+
+/* Adjusting the style of all links to remove undlerline */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
