@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Muddy Paws</title>
+    <link rel="stylesheet" type="text/css" href="MP_bag.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="MP_bag.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Navigation Section Grid -->
+    <div class="nav">
+      <div class="grid-item"><img src="MUDDY_PAWS_black.png" alt="logo" class="logo"></div>
+      <a href="MuddyPaws.html">
+        <div class="grid-item">Home</div>
+      </a>
+      <a href="MP_Browsing.html">
+        <div class="grid-item">Shop</div>
+      </a>
+      <a href="MP_About.html">
+      <div class="grid-item">About Us</div>
+      </a>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item-bag"><img src="search_prof_bag-black.png" alt="navigation icons"></div>
+      <div class="grid-item" id="quant-icon">0</div>
+    </div>
+
+    <!-- Grid container for all page content -->
+    <div class="content">
+
+      <div class="grid-item">
+        <a href="MP_Browsing.html">
+        <p> < Continue Shopping </p>
+        </a>
+        </div>
+
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+
+      <!-- Container for product images -->
+      <div class="grid-item"><h1>Your Bag</h1>
+        <div class="grid-item-sidepics">
+          <a href="MP_Detail.html">
+          <div class="grid-item-product-pic"><img src="pic1.png" class="grid-item-product-pic"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Container for product info -->
+      <div class="grid-item-info-container">
+        <div class="grid-item-info">
+          <div class="grid-item-info" id="b"><strong>Cat Backpack</strong></div>
+          <div class="grid-item-info">Large</div>
+          <div class="grid-item-info">Orange</div>
+        </div>
+
+        <div class="grid-item-info">
+          <div class="grid-item-info" id="price">$52</div>
+        <form>
+          <label for="fname">Quantity</label>
+          <input type="text" id="fname" name="fname" value=1>
+        </form>
+
+      </div>
+      </div>
+
+      <!-- Container for Order Summary -->
+      <div class="grid-item-order-summary-container-container">
+            <div class="grid-item-order-summary-container">
+
+              <h2>Order Summary</h2>
+              <div class="grid-item-order-summary"></div>
+              <div class="grid-item-order-summary">Subtotal</div>
+              <div class="grid-item-order-summary" id="subtotal"></div>
+              <div class="grid-item-order-summary">Estimated Taxes</div>
+              <div class="grid-item-order-summary"id="tax"></div>
+              <div class="grid-item-order-summary">Shipping</div>
+              <div class="grid-item-order-summary"id="shipping"></div>
+              <div class="grid-item-order-summary"></div>
+              <div class="grid-item-order-summary"></div>
+              <div class="grid-item-order-summary"id="total-text">TOTAL</div>
+              <div class="grid-item-order-summary"id="total"></div>
+            </div>
+
+            <!-- Check out button -->
+            <img src="check-out-button.png" id="check-out-button">
+      </div>
+
+      <!-- These are all grid placeholders to keep everything in the right sections -->
+      <div class="grid-item"></div>
+
+      <!-- Start of "more items you might like section" -->
+      <div class="grid-item" id="title2">More items you might like...</div>
+
+      <div class="grid-item"></div>
+
+      <!-- Grid for more items images -->
+      <div class="more-items">
+        <div class="grid-item-more" id="morepic1"></div>
+        <div class="grid-item-more" id="morepic2"></div>
+        <div class="grid-item-more" id="morepic3"></div>
+        <div class="grid-item-more" id="morepic4"></div>
+      </div>
+
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="grid-item"><img src="MUDDY_PAWS.png" alt="logo" class="logo" id="footerlogo"></div>
+      </div>
+      <div class="footer">footer</div>
+      <div class="footer">footer</div>
+
+    </div>
+  </body>
+
+</html>

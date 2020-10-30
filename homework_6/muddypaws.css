@@ -1,0 +1,246 @@
+/* For my grids I decided to use a nested grid system.
+Grid-container is the outermost grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0px;
+}
+
+/* Container for the navigation bar, has 7 comlumns for content */
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  padding: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+/* Container for popular products section, has 3 columns */
+.popular-products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+}
+
+/* Generic grid item basline */
+.grid-item {
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+
+/* Specific to grid items in home3 section */
+.grid-item-home3 {
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+  height: 150px;
+}
+
+/* Specific to navigation section */
+.grid-item-nav {
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-left: -75px;
+  margin-top: -30px;
+  color: white;
+  width: 75px;
+}
+
+/* Setting the hero image */
+.hero-image {
+  background-image: url("Group_19.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0px;
+  height: 1000px;
+}
+
+/* Setting the background for home2 */
+.home2 {
+  background-image: url("Rectangle 8.png");
+  background-color: #0F1C21;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0px;
+  height: 800px;
+}
+
+/* Setting the background for home3 */
+.home3 {
+  background-image: url("Group_20.png");
+  background-color: #0F1C21;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0px;
+  height: 500px;
+  align-content: center;
+}
+
+/* Profile icon in navigation */
+#profile {
+  margin-right: -250px;
+  margin-top: -30px;
+}
+
+/* Searchbar in navigation */
+#searchbox {
+  margin-right: -300px;
+  margin-bottom: 25px;
+  width: 200px;
+}
+
+/* Text that says "Shop Popular Products" */
+#shoppop {
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+/* Shopping bag icon in navigation */
+#bag {
+  margin-top: -30px;
+  margin-right: -90px;
+}
+
+.grid-item-getMuddy {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  padding-top: 0px;
+}
+
+/* Footer */
+.footer {
+  margin-left: -1000px;
+  margin-bottom: -110px;
+}
+
+/* MUDDY PAWS logo in navigation and footer */
+.logo {
+  margin-top: -15px;
+}
+
+/* Setting background for whole document */
+.document {
+  background: #E5E5E5;
+}
+
+/* Removing margins so content spreads to corners */
+body {
+  margin: 0px;
+}
+
+/* General text styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+
+/* Hero text "Muddy Paws" */
+.hero_txt1 {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 700px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size:36px;
+}
+
+/* Hero text "Adventure Gear (had to separate for spacing)" */
+.hero_txt2 {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 700px;
+  font-size: 36px;
+}
+
+/* Hero text "Customizable adventuring gear for your pet!" */
+.hero_txt {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 700px;
+  margin-top: 30px;
+}
+
+/* Shop all button in hero section */
+#shop_all_hero {
+  align-self: center;
+  margin-left: 700px;
+  margin-top: 25px;
+  background-color: #F37C49;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  padding: 8px;
+  border-radius: 46px;
+  border: 0px;
+  box-shadow: 1px 2px #373737;
+}
+
+/* Product feature dot/button on hero image */
+#dot {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 470px;
+  top: 720px;
+}
+
+/* Adjusting the style of all links to remove undlerline */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+#quant-icon {
+  font-family: Montserrat, sanserif;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-color: #F37C49;
+  border-radius: 30px;
+  margin-left: -20px;
+  margin-top: -50px;
+  text-align: center;
+  padding: 1px;
+}

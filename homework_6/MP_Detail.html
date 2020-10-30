@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Muddy Paws</title>
+    <link rel="stylesheet" type="text/css" href="MP_details.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="MP_details.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation Section Grid -->
+    <div class="nav">
+      <div class="grid-item"><img src="MUDDY_PAWS_black.png" alt="logo" class="logo"></div>
+      <a href="MuddyPaws.html">
+        <div class="grid-item">Home</div>
+      </a>
+      <a href="MP_Browsing.html">
+        <div class="grid-item">Shop</div>
+      </a>
+      <a href="MP_About.html">
+      <div class="grid-item">About Us</div>
+      </a>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+
+      <a href="MP_bag.html">
+      <div class="grid-item-bag"><img src="search_prof_bag-black.png" alt="navigation icons"></div>
+      </a>
+      <!-- Icon that tells how many items are in the bag -->
+      <div class="grid-item" id="quant-icon">0</div>
+
+    </div>
+
+    <!-- Grid container for all page content -->
+    <div class="content">
+      <!-- Grid container for pictures along the side of the larger picture -->
+      <div class="grid-item-sidepics">
+        <div class="grid-item" id="pic1"></div>
+        <div class="grid-item" id="pic2"></div>
+        <div class="grid-item" id="pic3"></div>
+        <div class="grid-item" id="pic4"></div>
+      </div>
+
+      <!-- Main product image -->
+      <div class="main-pic"></div>
+
+      <!-- Grid container for the product information -->
+      <div class="info">
+        <div class="grid-item" id="title">Cat Backpack</div>
+        <div class="grid-item" id="stars"></div>
+        <!-- Grid for color options -->
+        <div class="grid-item" id="colors">
+          <div class="grid-item" style="margin-left:-20px">Color: </div>
+          <div class="grid-item-colors" id="blue"><img src="blue.png" alt="blue" id='blue-dot'></div>
+          <div class="grid-item-colors" id="pink"><img src="pink.png" alt="pink" id='pink-dot'></div>
+          <div class="grid-item-colors" id="orange"><img src="orange.png" alt="orange" id='orange-dot'></div>
+          <div class="grid-item-colors" id="purple"><img src="purple.png" alt="purple" id='purple-dot'></div>
+        </div>
+        <!-- Grid for size options -->
+        <div class="grid-item" id="sizes">
+          <div class="grid-item" style="margin-left:-25px">Size: </div>
+          <div class="grid-item-sizes"><img src="t.png" alt="size Tiny" id="tiny"></div>
+          <div class="grid-item-sizes"><img src="s.png" alt="size Small" id="small"></div>
+          <div class="grid-item-sizes"><img src="m.png" alt="size Medium" id="medium"></div>
+          <div class="grid-item-sizes"><img src="l.png" alt="size Large" id="large"></div>
+        </div>
+
+        <!-- Quantity form, type number then click add to bag. (do not hit enter) -->
+        <form>
+          <label for="fname">Quantity: </label>
+          <input type="integer" id="fname" name="fname" value="1">
+        </form>
+
+        <!-- Add to bag button -->
+        <div class="grid-item-bag" id="addToBag"><img src="add-to-bag.png" alt="add to bag"></div>
+
+        <!-- Grid for further information (Details + Sizing) -->
+        <div class="grid-item-further">
+          <div class="grid-item-dropdown">Details</div>
+          <div class="grid-item-dropdown-plus"><img src="plus.png" alt="see more"></div>
+          <div class="grid-item-dropdown">Sizing
+            <div class-"grid-item-dropdown" id="size-details"></div>
+
+          </div>
+          <div class="grid-item-dropdown-plus"><img src="plus.png" alt="see more"></div>
+        </div>
+
+      </div>
+
+      <!-- These are all grid placeholders to keep everything in the right sections -->
+      <div class="grid-item"></div>
+
+      <!-- Start of "more items you might like section" -->
+      <div class="grid-item" id="title2">More items you might like...</div>
+
+      <div class="grid-item"></div>
+
+      <!-- Grid for more items images -->
+      <div class="more-items">
+        <div class="grid-item-more" id="morepic1"></div>
+        <div class="grid-item-more" id="morepic2"></div>
+        <div class="grid-item-more" id="morepic3"></div>
+        <div class="grid-item-more" id="morepic4"></div>
+      </div>
+
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="grid-item"><img src="MUDDY_PAWS.png" alt="logo" class="logo" id="footerlogo"></div>
+      </div>
+      <div class="footer">footer</div>
+      <div class="footer">footer</div>
+
+    </div>
+  </body>
+
+</html>
