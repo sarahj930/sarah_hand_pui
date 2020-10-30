@@ -127,8 +127,10 @@ document.getElementById('large').onclick = function() {
 }
 
 // On loading, update cart item count
+if (document.getElementById('quant-icon').innerHTML != 0){
 var totalItems = localStorage.getItem("totalItems");
 document.getElementById('quant-icon').innerHTML = totalItems;
+}
 
 //Add to bag functionality
 document.getElementById('addToBag').onclick = function() {
@@ -154,7 +156,14 @@ document.getElementById('addToBag').onclick = function() {
   document.getElementById('fname').value = 1;
 
   // Update quantity icon after add to bag
-  totalItems = parseInt(document.getElementById('quant-icon').innerHTML, 10) + parseInt(localStorage.getItem("quantity"), 10);
+  console.log(document.getElementById('quant-icon').innerHTML)
+  var iconNum = parseInt(document.getElementById('quant-icon').innerHTML);
+  console.log(iconNum);
+  console.log(localStorage.getItem("quantity"));
+  var parsedQuant = parseInt(localStorage.getItem("quantity"));
+  console.log(parsedQuant);
+  totalItems =  iconNum + parsedQuant;
+  console.log("totalItems: " + totalItems);
   document.getElementById('quant-icon').innerHTML = totalItems;
   localStorage.setItem("totalItems", totalItems);
   console.log("total items in cart: " + totalItems)
