@@ -154,7 +154,7 @@ document.getElementById('addToBag').onclick = function() {
   document.getElementById('fname').value = 1;
 
   // Update quantity icon after add to bag
-  totalItems = parseInt(document.getElementById('quant-icon').innerHTML) + parseInt(localStorage.getItem("quantity"));
+  totalItems = parseInt(document.getElementById('quant-icon').innerHTML, 10) + parseInt(localStorage.getItem("quantity"), 10);
   document.getElementById('quant-icon').innerHTML = totalItems;
   localStorage.setItem("totalItems", totalItems);
   console.log("total items in cart: " + totalItems)
