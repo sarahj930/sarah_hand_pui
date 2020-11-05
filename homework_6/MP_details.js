@@ -16,13 +16,13 @@ document.getElementById('blue').onclick = function() {
   document.getElementById('orange-dot').style.border = '0px solid black'
 
   // store color selection
-  localStorage.setItem("color", "blue");
+  localStorage.setItem("color", "Blue");
 
 }
 
 document.getElementById('pink').onclick = function() {
   console.log("clicked pink");
-  document.getElementsByClassName('main-pic')[0].style.backgroundImage = "url(pink-backpack.jpg)";
+  document.getElementsByClassName('main-pic')[0].style.backgroundImage = "url(pink-backpack.png)";
   document.getElementById('pink-dot').style.border = '3px solid black'
   document.getElementById('pink-dot').style.borderRadius = '30px'
 
@@ -30,7 +30,7 @@ document.getElementById('pink').onclick = function() {
   document.getElementById('purple-dot').style.border = '0px solid black'
   document.getElementById('orange-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "pink");
+  localStorage.setItem("color", "Pink");
 
 }
 
@@ -44,7 +44,7 @@ document.getElementById('orange').onclick = function() {
   document.getElementById('pink-dot').style.border = '0px solid black'
   document.getElementById('purple-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "orange");
+  localStorage.setItem("color", "Orange");
 
 }
 
@@ -58,7 +58,7 @@ document.getElementById('purple').onclick = function() {
   document.getElementById('pink-dot').style.border = '0px solid black'
   document.getElementById('orange-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "purple");
+  localStorage.setItem("color", "Purple");
 
 }
 
@@ -79,7 +79,7 @@ document.getElementById('tiny').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 8 lbs"
 
   // Store size selection
-  localStorage.setItem("size", "tiny");
+  localStorage.setItem("size", "Tiny");
 
 
 }
@@ -94,7 +94,7 @@ document.getElementById('small').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 15 lbs"
 
 
-  localStorage.setItem("size", "small");
+  localStorage.setItem("size", "Small");
 
 
 }
@@ -108,7 +108,7 @@ document.getElementById('medium').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 25 lbs"
 
 
-  localStorage.setItem("size", "medium");
+  localStorage.setItem("size", "Medium");
 
 }
 document.getElementById('large').onclick = function() {
@@ -122,14 +122,17 @@ document.getElementById('large').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 40 lbs"
 
 
-  localStorage.setItem("size", "large");
+  localStorage.setItem("size", "Large");
 
 }
 
 // On loading, update cart item count
 if (localStorage.getItem("totalItems") > 0) {
   var totalItems = localStorage.getItem("totalItems");
+  cart = JSON.parse(localStorage.getItem('cart'));
   document.getElementById('quant-icon').innerHTML = totalItems;
+} else {
+  var cart = [];
 }
 
 //Add to bag functionality
@@ -156,18 +159,25 @@ document.getElementById('addToBag').onclick = function() {
   document.getElementById('fname').value = 1;
 
   // Update quantity icon after add to bag
-  console.log(document.getElementById('quant-icon').innerHTML)
   var iconNum = parseInt(document.getElementById('quant-icon').innerHTML);
-  console.log(iconNum);
-  console.log(localStorage.getItem("quantity"));
   var parsedQuant = parseInt(localStorage.getItem("quantity"));
-  console.log(parsedQuant);
   totalItems =  iconNum + parsedQuant;
-  console.log("totalItems: " + totalItems);
   document.getElementById('quant-icon').innerHTML = totalItems;
   localStorage.setItem("totalItems", totalItems);
   console.log("total items in cart: " + totalItems)
 
+  var newItem = {product: "Cat Backpack", quantity: parsedQuant, size: localStorage.getItem("size"), color: localStorage.getItem("color")}
+  console.log(newItem.product + newItem.quantity + newItem.size + newItem.color)
+  cart[cart.length]= newItem;
+  console.log("cart[1].color " + cart[0].color);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  storedCart = JSON.parse(localStorage.getItem('cart'));
+  console.log(storedCart.length)
+  l = storedCart.length-1
+  console.log("testing stored cart color: " + storedCart[l].color);
+  // console.log("local storage cart length: " + localStorage.getItem('cart').length);
+
+  console.table(cart)
 }
 
 })

@@ -25,7 +25,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 80px;
-  border-bottom: 0.1px solid grey;
+  /* border-bottom: 0.1px solid grey; */
   height: 215px;
 }
 
@@ -36,18 +36,20 @@ body {
   width: 161px;
   margin-right: 10px;
   margin-top: 30px;
-  border-bottom: 0.1px solid grey;
 
 }
 
 /* All of these are adding the side pictures */
 .grid-item-product-pic {
   /* background-image: url(pic1.png); */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   height: 198px;
   width: 161px;
   background-repeat: no-repeat;
   align-content: left;
+  margin-bottom: 24px;
+  border-bottom: 0.1px solid grey;
+
 }
 
 /* Setting the main product image */
@@ -89,12 +91,13 @@ body {
 #price {
   text-align: right;
   font-size: 24px;
-  margin-top: 0px
+  margin-top: 10px;
 }
 
 /* Styling for product title */
 #b {
   font-size: 20px;
+  margin-top: 10px;
 }
 
 /* Styling for order summary */
@@ -147,6 +150,8 @@ body {
   width: 406px;
   text-align: center;
   margin-top: 20px;
+  height: 330px;
+  border-radius: 15px;
 }
 
 #check-out-button {
@@ -155,12 +160,10 @@ body {
 
 /* Styling for product information */
 .grid-item-info {
-  border: none;
   font-size: 15px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  margin: 0px;
   color: black;
 }
 
@@ -336,10 +339,10 @@ a:visited {
 form {
   font-family: Montserrat, sanserif;
   text-align: right;
-  margin-top: 159px;
+  margin-top: 149px;
 }
 
-#fname {
+.fname {
   width: 75px;
   border-radius: 16px;
   font-family: Montserrat, sanserif;
@@ -357,4 +360,24 @@ form {
   margin-left: -20px;
   margin-top: -10px;
   text-align: center;
+}
+
+.grid-item-info-1 {
+  border-bottom: 0.1px solid grey;
+  padding-bottom: 10px;
+}
+
+.remove {
+  width:20px;
+  background-color: #F37C49;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 5px;
+  box-shadow: 4px;
+  margin-top: -20px;
+  margin-left: 20px;
+  position: absolute;
 }
