@@ -16,7 +16,7 @@ document.getElementById('blue').onclick = function() {
   document.getElementById('orange-dot').style.border = '0px solid black'
 
   // store color selection
-  localStorage.setItem("color", "Blue");
+  localStorage.setItem("color", "blue");
 
 }
 
@@ -30,7 +30,7 @@ document.getElementById('pink').onclick = function() {
   document.getElementById('purple-dot').style.border = '0px solid black'
   document.getElementById('orange-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "Pink");
+  localStorage.setItem("color", "pink");
 
 }
 
@@ -44,7 +44,7 @@ document.getElementById('orange').onclick = function() {
   document.getElementById('pink-dot').style.border = '0px solid black'
   document.getElementById('purple-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "Orange");
+  localStorage.setItem("color", "orange");
 
 }
 
@@ -58,7 +58,7 @@ document.getElementById('purple').onclick = function() {
   document.getElementById('pink-dot').style.border = '0px solid black'
   document.getElementById('orange-dot').style.border = '0px solid black'
 
-  localStorage.setItem("color", "Purple");
+  localStorage.setItem("color", "purple");
 
 }
 
@@ -79,7 +79,7 @@ document.getElementById('tiny').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 8 lbs"
 
   // Store size selection
-  localStorage.setItem("size", "Tiny");
+  localStorage.setItem("size", "tiny");
 
 
 }
@@ -94,7 +94,7 @@ document.getElementById('small').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 15 lbs"
 
 
-  localStorage.setItem("size", "Small");
+  localStorage.setItem("size", "small");
 
 
 }
@@ -108,7 +108,7 @@ document.getElementById('medium').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 25 lbs"
 
 
-  localStorage.setItem("size", "Medium");
+  localStorage.setItem("size", "medium");
 
 }
 document.getElementById('large').onclick = function() {
@@ -122,7 +122,7 @@ document.getElementById('large').onclick = function() {
   document.getElementById("size-details").innerHTML = "This size fits pets up to 40 lbs"
 
 
-  localStorage.setItem("size", "Large");
+  localStorage.setItem("size", "large");
 
 }
 
