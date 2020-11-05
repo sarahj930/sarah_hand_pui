@@ -20,6 +20,7 @@ $(document).ready(() => {
   }
 
 
+  // Remove item from cart when click x button
   $('body').on('click', '.remove', function() {
     var index = this.id;
     var quant = this.previousSibling[0].value;
@@ -30,44 +31,11 @@ $(document).ready(() => {
     var x = localStorage.getItem('totalItems');
     x = x-quant;
     localStorage.setItem('totalItems', parseInt(x));
-    // var totalItems = 0;
-    // for (i = 0; i < length; i++) {
-    //     totalItems = totalItems + parseInt(storedCart[i].quantity);
-    // }
-    // console.log("total items now: " + totalItems);
-    // localStorage.setItem("totalItems", totalItems);
-    // if (localStorage.getItem("totalItems") > 0) {
-    //   document.getElementById('quant-icon').innerHTML = localStorage.getItem("totalItems");
-    // }
 
     localStorage.setItem('cart', JSON.stringify(storedCart));
 
     location.reload();
   });
-
-
-  // function remove() {
-  //   this.previousSibling.value;
-  //   this.previousSibling.name;
-  //   console.log(quant);
-  //   console.log(index);
-  //   var element = document.getElementById(index);
-  //   element.parentNode.removeChild(element);
-    // storedCart[index].quantity=quant;
-    // localStorage.setItem("cart", JSON.stringify(storedCart));
-    // console.table(storedCart)
-    // var totalItems = 0;
-    // for (i = 0; i < length; i++) {
-    //     totalItems = totalItems + parseInt(storedCart[i].quantity);
-    // }
-    // console.log("total items now: " + totalItems);
-    // localStorage.setItem("totalItems", totalItems);
-    // if (localStorage.getItem("totalItems") > 0) {
-    //   document.getElementById('quant-icon').innerHTML = localStorage.getItem("totalItems");
-    // }
-  // document.getElementById('submit').previousSibling.value = quant;
-  // alert("added " + quant.value + " " + localStorage.getItem("size") + " " + localStorage.getItem("color") + " Cat Backpack to bag");
-  // }
 
   // calculate and populate prices
   localStorage.setItem("cat-backpack-price", 52);
